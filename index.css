@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto');
+
 body {
     margin: 0 auto;
-    background-color: aqua;
+    /* Background pattern from Toptal Subtle Patterns */
+    background-image: url(sun-pattern.png);
+    background-repeat: repeat;
+    font-family: 'Raleway', sans-serif;
 }
 #wrapper {
     margin: auto;
@@ -29,10 +34,11 @@ body {
     right: 0;
     bottom: 0;
     display: block;
-    background-color: aqua;
+    background-color: #fff;
     border-radius: 12px;
     text-align: center;
     z-index: 4;
+    padding: 10px;
 }
 #bedroomDiv {
     display: block;
@@ -86,6 +92,9 @@ progress::-webkit-progress-bar {
 progress::-webkit-progress-value {
     background-color: aqua;
     border-radius: 12px;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
 }
 
 @keyframes shake {

@@ -268,8 +268,12 @@ function win () {
     clearInterval(hideTimer);
     var audio = new Audio('win.mp3');    
     audio.play();
+    
+    $("#bedroomDiv").hide();
+    $("#bathroomDiv").hide();
+    $("#apartmentDiv").hide();
+    
     $("#overlay").show();
     $("#intro").show();
     $("#intro").html("<img src='hamster.svg'/>");
-    
 }
