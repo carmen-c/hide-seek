@@ -4,13 +4,13 @@ body {
 }
 #wrapper {
     margin: auto;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
     width: 100%;
     height: 100%;
     overflow: hidden;
+        display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
 #overlay {
     position: relative;
@@ -69,10 +69,22 @@ body {
 }
 #timer {
     position: fixed;
-    right: 0;
-    top: 0;
+    right: 2%;
+    top: 5%;
     width: 20%;
     height: 5%;
+}
+#progressBar {
+    border: 4px white solid;
+    border-radius: 12px;
+}
+progress::-webkit-progress-bar {
+    background-color: #AEAEAE;
+    border-radius: 12px;
+}
+progress::-webkit-progress-value {
+    background-color: aqua;
+    border-radius: 12px;
 }
 
 @keyframes shake {

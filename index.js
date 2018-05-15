@@ -228,6 +228,11 @@ function playgame() {
             $("#overlay").show();
             $("#intro").show();
             $("#playgame").hide();
+            
+            $("#bedroomDiv").hide();
+            $("#bathroomDiv").hide();
+            $("#apartmentDiv").hide();
+            
             $("#desc").text("You failed :(");
             $("#progressBar").css({animation: "none"});
         }
