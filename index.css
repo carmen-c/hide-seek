@@ -73,6 +73,7 @@ body {
     top: 5%;
     width: 20%;
     height: 5%;
+    font-size: 1.5em;
 }
 #progressBar {
     border: 4px white solid;
