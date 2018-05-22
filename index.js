@@ -275,5 +275,5 @@ function win () {
     
     $("#overlay").show();
     $("#intro").show();
-    $("#intro").html("<img src='hamster.svg'/>");
+    $("#intro").html("<p>You found the hamster!</p><img id='hamster' src='hamster.svg'/>");
 }
