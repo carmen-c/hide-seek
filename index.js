@@ -10,6 +10,7 @@ var hidingSpot = "";
 
 $(document).ready(function() {
    pickHidingSpot(); 
+   playbgm();
 });
 
 apartment.addEventListener("load", function() {
@@ -222,6 +223,8 @@ function playgame() {
     document.getElementById("progressBar").value = 30 - --timeLeft;
         if(timeLeft <= 10) {
             $("#timer").css({animation: "shake 0.5s infinite"});
+            var audio = new Audio('clock.wav');    
+            audio.play();
         }
         if(timeLeft <= 0) {
             clearInterval(hideTimer);
@@ -276,4 +279,14 @@ function win () {
     $("#overlay").show();
     $("#intro").show();
     $("#intro").html("<p>You found the hamster!</p><img id='hamster' src='hamster.svg'/>");
+}
+
+function playbgm() {
+    myAudio = new Audio('happy.wav'); 
+    myAudio.volume = 0.2;
+    myAudio.addEventListener('ended', function() {
+        this.currentTime = 0;
+        this.play();
+    }, false);
+    myAudio.play();
 }
